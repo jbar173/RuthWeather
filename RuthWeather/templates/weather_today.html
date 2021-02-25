@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+      <br><br><br>
+      <h2>Today's weather ({{object.date}}) - York, UK</h2>
+      <br><br>
+
+      <h3>Outlook:</h3>
+      <br>
+      <p>{{object.outlook|title}}</p>
+
+      <br><br>
+      <h3>This morning:</h3>
+      <ul>
+        <li>Average temp: {{object.am.temp}}*C</li>
+        <li>Chance of rain: {{object.am.prec}}%</li>
+      </ul>
+
+      <br><br>
+
+      <h3>This afternoon:</h3>
+      <ul>
+        <li>Average temp: {{object.pm.temp}}*C</li>
+        <li>Chance of rain: {{object.pm.prec}}%</li>
+      </ul>
+
+      <br><br>
+
+      <h3>This evening:</h3>
+      <ul>
+        <li>Average temp: {{object.eve_temp}}*C</li>
+        <li>Chance of rain: {{object.eve.prec}}%</li>
+      </ul>
+      <br><br><br>
+
+
+{% endblock %}

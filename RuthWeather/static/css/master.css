@@ -1,0 +1,28 @@
+
+.base{
+  background-image: url('blue-sky.jpg');
+  background-size: cover;
+}
+
+.centre-title{
+  align-content: center;
+  text-align: center;
+}
+
+.centre{
+  align-content: center;
+}
+
+#box{
+  top: 0rem;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+  padding:40px;
+  margin-bottom:20px;
+  margin-right:20px;
+}
+
+.box-wrapper{
+  display: flex;
+}
